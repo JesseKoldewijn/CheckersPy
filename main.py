@@ -24,7 +24,7 @@ def main():
 
     # When game is running
     while run:
-        fps_handler.tick(MAX_FPS)
+        fps_handler.tick(MAX_FPS) # Limiting max-fps for stability reasons
         
         # Check events during run and store them
         for event in pygame.event.get():
@@ -37,6 +37,7 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                pass
 
+        # Draws the tiles and updates display after event loop
         board.draw_tiles(WIN)
         pygame.display.update()
 
