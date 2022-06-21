@@ -1,0 +1,10 @@
+[metadata]
+name = "CheckersPy"
+version = "0.0.1"
+author = "JesseKoldewijn"
+author_email = "jesse.koldewijn1999@hotmail.nl"
+description = "A small checkers game made in Python"
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+[build-system]
+requires = ["pygame", "cx_Freeze"]
