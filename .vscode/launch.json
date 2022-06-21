@@ -1,0 +1,13 @@
+{
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "Python: Run",
+			"type": "python",
+			"request": "launch",
+			"program": "./main.py",
+			"console": "integratedTerminal",
+			"justMyCode": true
+		}
+	]
+}
