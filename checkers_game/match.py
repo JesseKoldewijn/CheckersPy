@@ -5,7 +5,7 @@ import pygame
 
 # Imports local
 from .board import Board
-from .constants import BLUE, BROWN_DARK_ALT, OFF_WHITE, SQUARE_SIZE
+from .constants import VALID_MOVE, BROWN_DARK_ALT, OFF_WHITE, SQUARE_SIZE
 
 class Match:
     # Init functionality that's called on initial class call
@@ -68,7 +68,7 @@ class Match:
     def draw_valid_moves(self, moves):
         for move in moves:
             row, col = move
-            pygame.draw.circle(self.win, BLUE, (col * SQUARE_SIZE + SQUARE_SIZE//2, row * SQUARE_SIZE + SQUARE_SIZE//2), 15)
+            pygame.draw.circle(self.win, VALID_MOVE, (col * SQUARE_SIZE + SQUARE_SIZE//2, row * SQUARE_SIZE + SQUARE_SIZE//2), 15)
 
     # Method that changes the turn to the other player when this needs to happen
     def change_turn(self):
