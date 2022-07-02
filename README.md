@@ -11,6 +11,3 @@ Use the following command to run the game from the source-code:
 
 Then use the following command to get a executable for windows:
 <code>python3 setup.py build_exe</code>
-
-Then use the following command to get a executable for macos:
-<code>python3 setup.py build_dmg</code>

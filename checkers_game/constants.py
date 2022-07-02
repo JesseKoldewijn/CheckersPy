@@ -20,4 +20,4 @@ BLACK = (0,0,0)
 VALID_MOVE = (207,179,140)
 
 # Assets
-CROWN = pygame.transform.scale(pygame.image.load('assets/crown.png'), (50, 50))
+CROWN = pygame.transform.scale(pygame.image.load('lib/checkers_game/assets/crown.png'), (50, 50))
