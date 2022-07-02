@@ -1,7 +1,5 @@
 #   Checkers game using python
 
-## Main - Function
-
 # Imports external
 import pygame
 
@@ -38,7 +36,7 @@ def main():
                pass
 
         # Draws the tiles and updates display after event loop
-        board.draw_tiles(WIN)
+        board.draw_defined(WIN)
         pygame.display.update()
 
     # Will run if user closed the app
