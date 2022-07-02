@@ -18,3 +18,6 @@ RED = (255,0,0)
 OFF_WHITE = (207,179,140)
 BLACK = (0,0,0)
 BLUE = (0,0,255)
+
+# Assets
+CROWN = pygame.transform.scale(pygame.image.load('assets/crown.png'), (50, 50))

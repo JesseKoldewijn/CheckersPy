@@ -4,7 +4,7 @@
 import pygame
 
 # Imports local
-from checkers_game.constants import BROWN_LIGHT_ALT, BLACK, SQUARE_SIZE
+from checkers_game.constants import BROWN_LIGHT_ALT, BLACK, SQUARE_SIZE, CROWN
 
 class Piece: 
     # local variables - Class
@@ -43,6 +43,14 @@ class Piece:
         radius = SQUARE_SIZE//2 - self.PIECE_PADDING  
         pygame.draw.circle(win, BLACK, (self.x, self.y), radius + self.BORDER)
         pygame.draw.circle(win, self.color, (self.x, self.y), radius)
+        # If piece is king this will draw the king image onto the piece
+        if self.king:
+            win.blit(CROWN, (self.x - CROWN.get_width()//2, self.y - CROWN.get_height()//2))
+
+    def move_piece(self, row, col):
+        self.row = row
+        self.col = col
+        self.calc_position()
 
     # Debugger method that will show more detailed data on color prop that throws error
     def __represent__(self):
